@@ -22,18 +22,18 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("No GameObject with tag 'Music' found in the scene.");
+                Debug.LogError("game object dengan tag 'music' tidak ditemukan. ");
             }
         }
 
         if (buttonOn == null || buttonOff == null)
         {
-            Debug.LogError("Button On or Button Off is not assigned in the Inspector.");
+            Debug.LogError("bt on/off tidak ditetapkan diinspektor");
         }
         else
         {
-            // Debug log to check button assignments
-            Debug.Log("Button On and Button Off are assigned.");
+            // debug u/ memeriksa penetapan button
+            Debug.Log("bt on/off ditetapkan");
         }
 
         UpdateButtonStatus();
@@ -71,7 +71,7 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Button On is not assigned.");
+                Debug.LogError("bt on tidak ditetapkan");
             }
 
             if (buttonOff != null)
@@ -80,12 +80,12 @@ public class AudioManager : MonoBehaviour
             }
             else
             {
-                Debug.LogError("Button Off is not assigned.");
+                Debug.LogError("bt off tidak ditetapkan");
             }
         }
         else
         {
-            Debug.LogError("Background music is not assigned.");
+            Debug.LogError("bg music tidak ditetapkan");
         }
     }
 
@@ -110,7 +110,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("No GameObject with tag 'Music' found in the scene after scene load.");
+            Debug.LogError("Game object dengan tag 'music' tidak ditemukan");
         }
 
         UpdateButtonStatus();
